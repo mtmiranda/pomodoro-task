@@ -1,0 +1,33 @@
+@import './globalStyles.css';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.header__wrapper h1{
+  margin: 0 20px;
+}
+
+.tomateLogo{
+  width: 64px;
+  height: 64px;
+}
+
+@media (min-width: 1368px) {
+  .container {
+    max-width: 1368px;
+    margin: 0 auto;
+  }
+}
