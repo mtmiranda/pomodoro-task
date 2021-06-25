@@ -1,5 +1,5 @@
 .pomodoro__wrapper {
-  background: #fff;
+  background: #ffc0c0;
   padding: 20px;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -7,7 +7,6 @@
 }
 
 .pomodoro__wrapper h2 {
-  font-size: 24px;
   text-align: center;
 }
 
@@ -24,9 +23,9 @@
   margin: 20px auto;
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/131442/tomato.svg);
   background-repeat: no-repeat;
-  width: 80px;
+  width: 70px;
   height: 80px;
-  background-color:transparent;
+  background-color: transparent;
 }
 
 .pomodoro__wrapper .details {
