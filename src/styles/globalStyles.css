@@ -5,26 +5,42 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  background: #499354;
-  transition: background-color 300ms ease-in-out;
-  line-height: 1.5
+:root {
+  --breakpoint-mb-small: 576px;
+  --breakpoint-mb: 768px;
+  --breakpoint-mb-large: 992px;
+  --breakpoint-desk: 1368px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+html {
+  font-size: 100%;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  font-family: 'Jomhuria', cursive;
+  background: #499354;
+  transition: background-color 300ms ease-in-out;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+button {
+  font-family: 'Jomhuria', cursive;
+  font-size: 1.5rem;
 }
 
 .working {
   background: #ff6347de;
 }
-
-
-
-
-
-
