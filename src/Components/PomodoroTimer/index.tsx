@@ -104,7 +104,7 @@ export default function PomodoroTimer(props: Props): JSX.Element {
   ]);
 
   return (
-    <div className={styles.pomodoro__wrapper}>
+    <main className={styles.pomodoro__wrapper}>
       <h2>You are: {working ? 'Working' : 'Resting'}</h2>
 
       <Timer mainTime={mainTime} />
@@ -120,10 +120,19 @@ export default function PomodoroTimer(props: Props): JSX.Element {
       </div>
 
       <div className={styles.details}>
-        <p>Completed cycles: {completedCycles}</p>
-        <p>Worked hours: {secondsToTime(fullWorkingTime)}</p>
-        <p>Completed Pomodoros: {numberOfPomodoros}</p>
+        <div className={styles.details__items}>
+          <p>Completed cycles: {completedCycles}</p>
+          <p>Worked hours: {secondsToTime(fullWorkingTime)}</p>
+          <p>Completed Pomodoros: {numberOfPomodoros}</p>
+        </div>
+        <div className={styles.container__brand}>
+          <div className={styles.brand}>
+            <p>
+              Designed by <br /> mtmiranda
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
