@@ -21,8 +21,8 @@ Projeto que utiliza a técnica **pomodoro**, onde o usuário poderá controlar m
 ## Imagens do projeto
 
 <p float="left">
-  <img src="https://imgur.com/g1Qjl73" width="365" height="220" />
-  <img src="https://imgur.com/TQr6Wbi" width="365" height="220" />
+  <img src="https://i.imgur.com/g1Qjl73.png" width="365" height="220" />
+  <img src="https://i.imgur.com/TQr6Wbi.png" width="365" height="220" />
 
 </p>
 
