@@ -4,6 +4,18 @@
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 600px;
+  position: relative;
+}
+
+
+@media (max-width: 576px) {
+  .pomodoro__wrapper {
+    width: 450px;
+  }
+
+  .pomodoro__wrapper .controls {
+    flex-direction: column;
+  }
 }
 
 .pomodoro__wrapper h2 {
@@ -21,15 +33,43 @@
   cursor: pointer;
   color: #000;
   margin: 20px auto;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/131442/tomato.svg);
+  /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/131442/tomato.svg); */
+  background-image: url('../../assets/tomato.png');
   background-repeat: no-repeat;
-  width: 70px;
+  background-size: cover;
+  width: 80px;
   height: 80px;
   background-color: transparent;
+  transition: transform 0.5s;
+  line-height: 95px;
+}
+
+.pomodoro__wrapper button:hover {
+  transform: scale(1.2);
 }
 
 .pomodoro__wrapper .details {
   margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pomodoro__wrapper .details .container__brand {
+  background: url('../../assets/paint-bg.png') no-repeat;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+}
+
+.pomodoro__wrapper .details .container__brand .brand {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  line-height: 1;
+  transform: rotate(35deg);
+  color: black;
+  font-size: 1.5rem;
 }
 
 .hidden {
