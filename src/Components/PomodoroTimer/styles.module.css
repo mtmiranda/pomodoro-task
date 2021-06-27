@@ -1,9 +1,9 @@
 .pomodoro__wrapper {
   background: #ffc0c0;
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 600px;
+  width: 450px;
   position: relative;
 }
 
